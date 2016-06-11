@@ -618,36 +618,42 @@ img{
 }
 /*************totop结束******************/
 /*************遮罩层开始******************/
-#mask1{
+.mask{
+    width: 100%;
+    height: 2200px;
     background: #000;
     opacity: 0.75;
     filter:alpha(opacity=75);
-    height: 2000px;
-    width: 100%;
-    position: absolute;
+    position: fixed;
     left: 0;
     top: 0;
+}
+.lightbox-img{
+    max-width: 600px;
+    position: fixed;
+    background: #ccc;
+    text-align: center;
     z-index: 2;
 }
-#mask2{
-    position: fixed;
-    left: 30%;
-    top: 30%;
-    z-index: 3;
+.loading{
+    font-size: 28px;
+    margin-top: 25%;
+    z-index: 2;
 }
-#mask2 .pic{
-    width: 670px;
-    height: 380px;
-    background: url(../images/port-pic.jpg) no-repeat;
-    position: relative;
-}
-#close{
+.cl{
     width: 30px;
     height: 30px;
     background: url(../images/close.gif) no-repeat;
     cursor: pointer;
-    position: absolute;
-    left: 5px;
-    top: 5px;
+    position: fixed;
+    z-index: 4;
 }
+/* .close{
+    width: 30px;
+    height: 30px;
+    background: url(../images/close.gif) no-repeat;
+    cursor: pointer;
+    position: fixed;
+    z-index: 4;
+} */
 /*************遮罩层结束******************/
