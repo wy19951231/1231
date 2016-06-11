@@ -53,6 +53,10 @@
 			$div.hide();
 			$close.hide();
 		});
+		$(".cl").click(function(){
+			$mask.hide();
+			$div.hide();
+			$close.hide();
 		})
 	});
 
